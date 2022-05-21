@@ -1,0 +1,529 @@
+/*------------------------------------------------------------------------MUY IMPORTANTE SIEMPRE ESTAR--------------------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*------------------------------------------------------------------------MUY IMPORTANTE SIEMPRE ESTAR--------------------------------------------------------------------------------*/
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+        "headernav"
+        "grillados"
+        "footer";
+    height: 100vh;
+    min-height: 100vh;
+    /*mantiene footer abajo sin que se rompa*/
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+
+.containerheader {
+    grid-area: headernav;
+}
+
+#grillados {
+    grid-area: grillados;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "banner"
+        "sectionprincipal"
+        "sectiondestacadas"
+        "sectionpagos"
+        "sectionform";
+    grid-template-rows: auto auto auto auto auto;
+
+}
+
+footer {
+    grid-area: footer;
+}
+
+html {
+    font-size: 62.5%;
+    min-height: 100%;
+}
+
+body {
+    /* SI O SI DEBE TENER UN VIEWHEIGHT */
+
+    height: 100vh;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+header a,
+footer a {
+    text-decoration: none;
+    width: 100%;
+    color: aqua;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+header,
+footer {
+
+    background-color: rgb(29, 28, 28);
+    width: 100%;
+}
+
+.containerbanner{
+    padding-bottom: 0.25rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+
+}
+
+.parrafo {
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    height: 18px;
+    font-size: 2.1rem;
+    background-color: rgba(0, 0, 0, 0.534);
+    text-align: center;
+    /*evitar que se rompa todo*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: Ellipsis;
+    /*evitar que se rompa todo*/
+    color: rgb(255, 255, 255);
+
+    font-variant: small-caps;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*------------------------------------------------------------------------CLASSES HEADER---------------------------------------------------------------------------------------*/
+
+
+/*
+.header__div__nav {
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem; 
+} 
+*/
+
+
+
+.containerheader {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 1.58rem;
+
+}
+
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.containerheader__nav a {
+    padding: 0 0.3vw;
+    padding-right: 2vw;
+}
+
+.container__logo {
+    padding: 0 5vw;
+}
+
+/*------------------------------------------------------------------------CLASSES HEADER---------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------CLASSES INDEX---------------------------------------------------------------------------------------*/
+.gradient{
+    background-image: linear-gradient(to left, #3b3b3b, #313131, #282828, #1f1f1f, #161616);
+}
+
+/*------------------------------------------------------------------------CLASSES INDEX---------------------------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------INDEX ClASSES SECTION PRINCIPAL----------------------------------------------------------------------------------*/
+.sectionprincipal {
+    width: 100%;
+
+}
+
+#novedades
+
+/* parrafo novedades */
+    {
+    color: rgb(0, 0, 0);
+    font-variant: small-caps;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 4px;
+
+}
+
+#imagenesdestacadas {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sectionarticledivdestacadas {
+    width: 30%;
+}
+
+/*--------------------------------------------------------------INDEX ClASSES SECTION PRINCIPAL----------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------INDEX ClASSES SECTION SECONDARY----------------------------------------------------------------------------------*/
+
+.sectiondestacadas2 {
+    width: 100%;
+    height: auto;
+}
+
+.contenedordestacadas__img {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.contenedordestacadas__parrafo {
+    text-align: center;
+}
+
+.contenedordestacadas__destacada {
+    height: 400px;
+    width: 30%;
+}
+
+/*--------------------------------------------------------------INDEX ClASSES SECTION PAGOS Y FORM----------------------------------------------------------------------------------*/
+
+
+
+
+.sectionpagos {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    background-image: url(../assets/img/SP1_original.jpg);
+}
+
+.sectionpagos__div__span {
+    position: relative;
+    bottom: 16px;
+}
+
+.sectionform {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.legendform{
+    color: white;
+    text-shadow: #161616 0 -2px;
+    
+}
+
+/*------------------------------------------------------------------------CLASSES FOOTER---------------------------------------------------------------------------------------*/
+
+footer {
+    font-size: 1.5rem;
+    width: 100%;
+    padding-top: 0.5%;
+}
+
+.footer,
+.footer__div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+}
+
+.footer__divsuscribete {
+    position: relative;
+    padding-right: 15%;
+    text-align: center;
+}
+
+.footer__divsuscribete__b {
+    font-size: 1.5rem;
+    font-family: serif;
+
+}
+
+.footer__divwsp {
+    position: fixed;
+    top: 94%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__divwsp__img {
+    width: 50px;
+    height: 100%;
+    z-index: 10;
+
+
+
+}
+
+.footer__divlogo {
+    display: flex;
+    align-items: center;
+    padding-right: 2%;
+
+
+}
+
+.footer__links {
+    padding-bottom: 0.3%;
+}
+
+/*------------------------------------------------------------------------CLASSES FOOTER---------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------------------------------CLASSES PAGE QUIENES SOMOS-------------------------------------------------------------------------------*/
+.bodyQS {
+    background-image: url(../assets/img/SP1_original.jpg);
+
+    /* IMAGEN RESPONSIVE (poner en el resto de fondos) */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#divheaderquienessomos {
+    grid-area: headernav;
+    height: 7%;
+}
+
+#mainquienessomos {
+    grid-area: grillados;   
+    height: 77.4vh; 
+    overflow-y: scroll;
+    overflow-y: auto; 
+}
+
+#footerquienessomos {
+    grid-area: footer;
+
+}
+
+
+
+
+
+.main__h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    color: aliceblue;
+    text-shadow: black 0.5rem 0.5rem 0.7rem;
+}
+
+.main__div {
+    padding: 1%;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 1.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+
+    color: whitesmoke;
+
+}
+
+.main__div__p {
+    text-shadow: black 0.3rem 0.3rem 0.4rem;
+    text-shadow: black 0rem -0.2rem;
+    /* borde tipo para arriba*/
+
+}
+
+/*------------------------------------------------------------------------CLASSES PAGE QUIENES SOMOS-------------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------CLASSES PAGE PREGUNTAS FREC-------------------------------------------------------------------------------*/
+
+#bodypreguntasfrec {
+
+    background-image: url(../assets/img/ChinoB_original.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.preguntasfrecuentes__section {
+    font-size: 1.8rem;
+    color: white;
+    text-shadow: black 0.9rem 0.7rem 1rem;
+}
+
+.preguntasfrecuentes__section__article__b,
+#pregspan {
+    display: flex;
+    justify-content: center;
+}
+
+.containeriframe {
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+}
+
+.iframepreg {
+    width: 30%;
+    height: 100%;
+}
+
+
+
+/*------------------------------------------------------------------------CLASSES PAGE PREGUNTAS FREC-------------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------CLASSES PAGE PRODUCTOS-------------------------------------------------------------------------------*/
+
+.productosdiv {
+    display: flex;
+    justify-content: space-evenly
+}
+
+.productosdestacados {
+    width: 23%;
+    height: 50vh;
+
+}
+
+/*------------------------------------------------------------------------CLASSES PAGE PRODUCTOS-------------------------------------------------------------------------------*/
+
+
+
+
+
+@media only screen and (max-width: 420px) {
+
+    .header {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .containerheader__nav{
+        text-align:center;
+    }
+    .footer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+/*------------------------------------------------------------------------INDEX RESPONSIVE-------------------------------------------------------------------------------*/
+    
+    .sectionarticledivdestacadas{
+        height: 200px;
+        width: 200px;
+        padding: 2px;
+        
+    }
+    #imagenesdestacadas{
+        flex-wrap: wrap;
+    }
+
+    .contenedordestacadas__img{
+        flex-wrap: wrap;
+    }
+    .contenedordestacadas__destacada{
+        height: 200px;
+        width: 190px;
+        padding: 2px;
+    }
+    .sectionpagos__div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .sectionpagos__div__span{
+        padding-top: 14px;
+    }
+
+     .main__h1{
+         text-align: center;
+     }
+/*------------------------------------------------------------------------INDEX RESPONSIVE-------------------------------------------------------------------------------*/
+
+}
+
+
+@media only screen and (min-width: 421px) and (max-width: 960px){
+
+    .header {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .containerheader__nav{
+        text-align:center;
+    }
+    .footer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /*INDEX*/
+
+    .sectionarticledivdestacadas{
+        height: 210px;
+        width: 210px;
+        padding: 2px;
+        
+    }
+    #imagenesdestacadas{
+        flex-wrap: wrap;
+    }
+
+    .contenedordestacadas__img{
+        flex-wrap: wrap;
+    }
+    .contenedordestacadas__destacada{
+        height: 210px;
+        width: 210px;
+        padding: 2px;
+    }
+    .sectionpagos__div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .sectionpagos__div__span{
+        padding-top: 14px;
+    }
+
+    /*QUIENESOMOS*/
+     .main__h1{
+         text-align: center;
+     }
+
+}
