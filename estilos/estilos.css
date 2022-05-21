@@ -189,11 +189,14 @@ footer {
 
 #imagenesdestacadas {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.sectionarticledivdestacadas {
-    width: 30%;
+.imagenesgeneral {
+    width: 550px;
+    height: 450px;
+    border-radius: 10%;
 }
 
 /*--------------------------------------------------------------INDEX ClASSES SECTION PRINCIPAL----------------------------------------------------------------------------------*/
@@ -207,8 +210,9 @@ footer {
 
 .contenedordestacadas__img {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 10px;
+    padding-top: 3px;
 }
 
 .contenedordestacadas__parrafo {
@@ -225,15 +229,8 @@ footer {
     transition: text-shadow 200ms;
 }
 .contenedordestacadas__parrafo:hover{
-    text-shadow: red -2px 0, cyan 2px 0;
+    text-shadow: red -3px 0, cyan 3px 0;
 }
-
-
-.contenedordestacadas__destacada {
-    height: 400px;
-    width: 30%;
-}
-
 /*--------------------------------------------------------------INDEX ClASSES SECTION PAGOS Y FORM----------------------------------------------------------------------------------*/
 
 
@@ -462,7 +459,7 @@ footer {
 
 /*------------------------------------------------------------------------INDEX RESPONSIVE-------------------------------------------------------------------------------*/
     
-    .sectionarticledivdestacadas{
+    .imagenesgeneral{
         height: 200px;
         width: 200px;
         padding: 2px;
@@ -475,11 +472,8 @@ footer {
     .contenedordestacadas__img{
         flex-wrap: wrap;
     }
-    .contenedordestacadas__destacada{
-        height: 200px;
-        width: 190px;
-        padding: 2px;
-    }
+
+
     .sectionpagos__div{
         display: flex;
         flex-direction: column;
@@ -514,7 +508,7 @@ footer {
 
     /*INDEX*/
 
-    .sectionarticledivdestacadas{
+    .imagenesgeneral{
         height: 210px;
         width: 210px;
         padding: 2px;
@@ -524,14 +518,6 @@ footer {
         flex-wrap: wrap;
     }
 
-    .contenedordestacadas__img{
-        flex-wrap: wrap;
-    }
-    .contenedordestacadas__destacada{
-        height: 210px;
-        width: 210px;
-        padding: 2px;
-    }
     .sectionpagos__div{
         display: flex;
         flex-direction: column;
