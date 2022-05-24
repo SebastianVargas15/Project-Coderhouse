@@ -1,4 +1,6 @@
 /*------------------------------------------------------------------------MUY IMPORTANTE SIEMPRE ESTAR--------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -184,19 +186,21 @@ footer {
     
 }
 #novedades:hover{
-    text-shadow: red -2px 0, cyan 2px 0; 
+    text-shadow: red -2.5px 0, cyan 2.5px 0; 
 }
 
 #imagenesdestacadas {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .imagenesgeneral {
-    width: 550px;
-    height: 450px;
+    width: 450px;
+    height: 300px;
     border-radius: 10%;
+    padding: 2px;
+
 }
 
 /*--------------------------------------------------------------INDEX ClASSES SECTION PRINCIPAL----------------------------------------------------------------------------------*/
@@ -211,7 +215,7 @@ footer {
 .contenedordestacadas__img {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-top: 3px;
 }
 
@@ -229,7 +233,7 @@ footer {
     transition: text-shadow 200ms;
 }
 .contenedordestacadas__parrafo:hover{
-    text-shadow: red -3px 0, cyan 3px 0;
+    text-shadow: red -2.5px 0, cyan 2.5px 0;
 }
 /*--------------------------------------------------------------INDEX ClASSES SECTION PAGOS Y FORM----------------------------------------------------------------------------------*/
 
@@ -271,7 +275,8 @@ footer {
 .footer,
 .footer__div {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding-left: 2%;
 }
 
@@ -288,23 +293,27 @@ footer {
 }
 
 .footer__divwsp {
-    position: fixed;
-    left: 95%;
-    top: 86%;
+    position: relative;
     display: flex;
     flex-direction: column;
-    transform: translate(-80%,0px);
+    align-items: center;
+    /*
+    transform: translate(-80%,15%);
+    */
+
 }
 .footer__divwsp__img {
-    transform: translate(5px,1px);
     width: 50px;
     height: 50px;
+    text-align: center;
 }
 
 .footer__divlogo {
     display: flex;
     align-items: center;
-    padding-right: 2%;
+    
+    padding-left: 15%;
+    
 
 
 }
@@ -425,18 +434,50 @@ footer {
 
 
 /*------------------------------------------------------------------------CLASSES PAGE PRODUCTOS-------------------------------------------------------------------------------*/
+.title__productos{
+    font-size: 4.5rem;
+    text-align: center;
+    font-family: 'Akshar', sans-serif;
+}
 
-.productosdiv {
+.title__productosh2{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Akshar', sans-serif;
+    padding: 10px;
+}
+
+.items__productos{
+    width: 400px;
+    height: 300px;
+}
+
+.flexcontainer__products{
     display: flex;
-    justify-content: space-evenly
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    
 }
-
-.productosdestacados {
-    width: 23%;
-    height: 50vh;
+.div__description{
+    max-width: 50%;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #3e3e3e;
+    padding: 20px 20px 40px;
+}
+.div__description__title{
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom:  20px;
+    font-family: "LL Circular Bold Sub", Helvetica, sans-serif;
+    color: black;
 
 }
-
+.div__description p{
+    padding-left: 10%;
+}
 /*------------------------------------------------------------------------CLASSES PAGE PRODUCTOS-------------------------------------------------------------------------------*/
 
 
@@ -453,8 +494,15 @@ footer {
         text-align:center;
     }
     .footer{
-        flex-wrap: wrap;
         justify-content: center;
+    }
+    .footer__divlogo{
+        padding: 0%;
+    }
+
+    .footer__divwsp__img {
+        max-width: 50px;
+        max-width: 40px;
     }
 
 /*------------------------------------------------------------------------INDEX RESPONSIVE-------------------------------------------------------------------------------*/
@@ -506,6 +554,7 @@ footer {
         justify-content: center;
     }
 
+    
     /*INDEX*/
 
     .imagenesgeneral{
@@ -532,5 +581,6 @@ footer {
      .main__h1{
          text-align: center;
      }
+
 
 }
