@@ -22,8 +22,8 @@ img {
         "headernav"
         "grillados"
         "footer";
-        height: 100vh;
-        min-height: 100vh;
+    height: 100vh;
+    min-height: 100vh;
     /*mantiene footer abajo sin que se rompa*/
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
@@ -33,9 +33,10 @@ header {
     grid-area: headernav;
 }
 
-main{
+main {
     grid-area: grillados;
 }
+
 /*
 #grillados {
     grid-area: grillados;
@@ -88,7 +89,7 @@ footer {
     width: 100%;
 }
 
-.containerbanner{
+.containerbanner {
     padding-bottom: 0.25rem;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
@@ -113,7 +114,7 @@ footer {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#parraph{
+#parraph {
     background-color: black;
 }
 
@@ -126,23 +127,18 @@ footer {
     */
     font-size: 1.5rem;
 }
-.container-fluid{
-    background-color: rgb(255, 255, 255);
-}
-
-
 .container__logo {
     padding: 0 5vw;
 }
 
-.navbar-brand{
+.navbar-brand {
     height: 60px;
 }
 
 /*------------------------------------------------------------------------CLASSES HEADER---------------------------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------------CLASSES INDEX---------------------------------------------------------------------------------------*/
-.gradient{
+.gradient {
     background-image: linear-gradient(to left, #3b3b3b, #313131, #282828, #1f1f1f, #161616);
 }
 
@@ -166,14 +162,15 @@ footer {
     text-align: center;
     font-size: 2rem;
     padding-top: 4px;
-    
+
     text-shadow: red 0 0, cyan 0 0;
     letter-spacing: 6px;
     transition: text-shadow 200ms;
-    
+
 }
-#novedades:hover{
-    text-shadow: red -2.5px 0, cyan 2.5px 0; 
+
+#novedades:hover {
+    text-shadow: red -2.5px 0, cyan 2.5px 0;
 }
 
 #imagenesdestacadas {
@@ -214,14 +211,16 @@ footer {
     text-align: center;
     font-size: 1.7rem;
     padding-top: 4px;
-    
+
     text-shadow: red 0 0, cyan 0 0;
     letter-spacing: 6px;
     transition: text-shadow 200ms;
 }
-.contenedordestacadas__parrafo:hover{
+
+.contenedordestacadas__parrafo:hover {
     text-shadow: red -2.5px 0, cyan 2.5px 0;
 }
+
 /*--------------------------------------------------------------INDEX ClASSES SECTION PAGOS Y FORM----------------------------------------------------------------------------------*/
 
 
@@ -243,17 +242,19 @@ footer {
     text-align: center;
     font-size: 2.0rem;
 }
-.legendform{
+
+.legendform {
     color: white;
     text-shadow: #161616 0 -2px;
     font-size: 2.5rem;
-    
+
 }
-.sectionform__div{
+
+.sectionform__div {
     padding-bottom: 5px;
 }
 
-.forminput{
+.forminput {
     padding: 2px;
 }
 
@@ -296,12 +297,14 @@ footer {
     color: white;
 
 }
+
 .footer__divwsp__img {
     width: 50px;
     height: 50px;
     text-align: center;
     transform: translateX(10px)
 }
+
 .footer__divwsp:hover {
     color: white;
 }
@@ -333,10 +336,10 @@ footer {
 }
 
 #mainquienessomos {
-    grid-area: grillados;   
-    height: 77.4vh; 
+    grid-area: grillados;
+    height: 77.4vh;
     overflow-y: scroll;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 
 #footerquienessomos {
@@ -418,74 +421,114 @@ footer {
 
 
 /*------------------------------------------------------------------------CLASSES PAGE PRODUCTOS-------------------------------------------------------------------------------*/
-.title__productos{
+.title__productos {
     font-size: 4.5rem;
     text-align: center;
     font-family: 'Akshar', sans-serif;
 }
 
-.title__productosh2{
+.title__productosh2 {
     font-size: 3rem;
     text-align: center;
     font-family: 'Akshar', sans-serif;
     padding: 10px;
 }
 
-.items__productos{
+.items__productos {
     width: 400px;
     height: 300px;
     border-radius: 10%;
 }
 
-.flexcontainer__products{
+.flexcontainer__products {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-    
+
 }
-.div__description{
+
+.div__description {
     max-width: 50%;
     font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
     color: #3e3e3e;
     padding: 20px 20px 40px;
 }
-.div__description__title{
+
+.div__description__title {
     text-align: center;
     font-size: 3rem;
-    padding-bottom:  20px;
+    padding-bottom: 20px;
     font-family: "LL Circular Bold Sub", Helvetica, sans-serif;
     color: black;
 
 }
-.div__description p{
+
+.div__description p {
     padding-left: 10%;
 }
+
+
+/*-----------------------------------------------------------------------------------CHAMPIONESPAGE-----------------------------------------------------------------------------*/
+
+.championestitle {
+    text-align: center;
+}
+
+#championesgrid {
+    display: grid;
+    grid-template-columns: auto 500px auto;
+    justify-content: space-between;
+}
+
+.containernavbar1 {
+    grid-column: 1/2;
+
+}
+
+.containercarrousels {
+    grid-column: 2/3;
+}
+
+.containernavbar2 {
+    grid-column: 3/4;
+}
+
+.containeritems {
+    padding: 10px;
+}
+
+
 /*------------------------------------------------------------------------CLASSES PAGE PRODUCTOS-------------------------------------------------------------------------------*/
 
 
 
 
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 400px) {
 
     .header {
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .containerheader__nav{
-        text-align:center;
+
+    .containerheader__nav {
+        text-align: center;
     }
-    .footer{
+
+    .footer {
         justify-content: center;
+        padding-left: 0%;
+    }
+
+    .footer__div{
+        padding-left: 0%;
     }
 
     .ulfooter{
-        display: inline-block;
-        transform: translateX(-58%);
-
+        padding: 0px;
     }
 
     .footer__divwsp__img {
@@ -493,90 +536,136 @@ footer {
         max-width: 40px;
     }
 
-    .footer__divsuscribete{
+    .footer__divsuscribete {
         padding: 0%;
     }
 
-    .div__description{
+    .div__description {
         max-width: 90%;
     }
+    /*------------------------------------------------------------------------INDEX RESPONSIVE-------------------------------------------------------------------------------*/
 
-/*------------------------------------------------------------------------INDEX RESPONSIVE-------------------------------------------------------------------------------*/
-    
-    .imagenesgeneral{
+    .imagenesgeneral {
         height: 200px;
         width: 200px;
         padding: 2px;
-        
+
     }
-    #imagenesdestacadas{
+
+    #imagenesdestacadas {
         flex-wrap: wrap;
     }
 
-    .contenedordestacadas__img{
+    .contenedordestacadas__img {
         flex-wrap: wrap;
     }
 
 
-    .sectionpagos__div{
+    .sectionpagos__div {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         margin: auto;
     }
-    .sectionpagos__div__span{
+
+    .sectionpagos__div__span {
         padding-top: 14px;
     }
 
-     .main__h1{
-         text-align: center;
-     }
-/*------------------------------------------------------------------------INDEX RESPONSIVE-------------------------------------------------------------------------------*/
+    .main__h1 {
+        text-align: center;
+    }
+
+    /*------------------------------------------------------------------------INDEX RESPONSIVE-------------------------------------------------------------------------------*/
+
+  /*CHAMPIONES*/
+
+  #championesgrid {
+    display: grid;
+    grid-template-columns: auto 270px auto;
+    justify-content: space-between;
+}
+    
 
 }
 
 
-@media only screen and (min-width: 421px) and (max-width: 960px){
+@media only screen and (min-width: 401px) and (max-width: 960px) {
 
     .header {
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .containerheader__nav{
-        text-align:center;
-    }
-    .footer{
-        flex-wrap: wrap;
-        justify-content: center;
+
+    .containerheader__nav {
+        text-align: center;
     }
 
-    
+    .footer {
+        justify-content: center;
+        padding-left: 0%;
+    }
+
+    .footer__div{
+        padding-left: 0%;
+    }
+
+    .ulfooter{
+        padding: 0px;
+    }
+
+    .footer__divsuscribete {
+        padding: 0%;
+    }
+
+    .div__description {
+        max-width: 90%;
+    }
+
     /*INDEX*/
 
-    .imagenesgeneral{
+    .imagenesgeneral {
         height: 210px;
         width: 210px;
         padding: 2px;
-        
+
     }
-    #imagenesdestacadas{
+
+    #imagenesdestacadas {
         flex-wrap: wrap;
     }
 
-    .sectionpagos__div{
+    .sectionpagos__div {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         margin: auto;
     }
-    .sectionpagos__div__span{
+
+    .sectionpagos__div__span {
         padding-top: 14px;
     }
 
     /*QUIENESOMOS*/
-     .main__h1{
-         text-align: center;
-     }
+    .main__h1 {
+        text-align: center;
+    }
 
+
+    /*CHAMPIONES*/
+
+    #championesgrid {
+        display: grid;
+        grid-template-columns: auto 300px auto;
+        justify-content: space-between;
+    }
+}
+
+.nav-link{
+    color: #fff!important;
+}
+
+.navbar{
+    color: rgb(255, 255, 0)!important;
 
 }
