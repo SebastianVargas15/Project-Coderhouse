@@ -8,36 +8,52 @@
     <title>C&M Sport</title>
     <link rel="Icon" href="imagenes proyecto/logo original png.png">
     <link rel="stylesheet" href="../estilos/estilos.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-    <header class="header" id="volver">
+   
+    <header class="containerheader">
         <div class="parrafo">
-            <h6>Tienda de ropa deportiva para adultos y adolescentes</h6>
+            <h4>Tienda de ropa deportiva para adultos y adolescentes</h4>
         </div>
-
-        <div class="header__div">
-            <div class="header__div__logo">
-                <a href="../index.html"><img src="../assets/img/logo original png.png" alt="cym logo" height="70"></a>
-            </div>
-            <nav class="containerheader__nav">
-
-                <a class="header__div__logo__links" href="../index.html">Inicio</a>
-                <a class="header__div__logo__links" href="quienessomos.html">Quienes Somos</a>
-                <a class="header__div__logo__links" href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
-                <a class="header__div__logo__links" href="productos.html">Productos</a>
-                <a class="header__div__logo__links" href="contacto.html">Contacto</a>
-
-                <div class="testing">
-                    <img src="../assets/img/lupa.png" class="header__div__nav__link2" height="20px" alt="Buscador">
-                    <a href="carrito.html" class="header__div__nav__link2">Carrito</a>
+        <nav class="navbar navbar-expand-lg bg-light" id="volver">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../assets/img/logo original png.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/quienessomos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/preguntasfrecuentes.html">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Que estas buscando?"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
                 </div>
-            </nav>
-           
-        </div>
-
+            </div>
+        </nav>
     </header>
+
     <h1>Contacto</h1>
     <main>
         <section>
@@ -116,7 +132,7 @@
             </div>
 
             <div class="footer__divwsp">
-                <h4>Contacto Whatsapp</h4>
+                <h4>Whatsapp</h4>
                 <a href="http://whatsapp.com" target="_blank" rel="noopener noreferrer">
                     <div class="footer__divwsp__img">
                         <img src="../assets/img/png wsp.png" width="70" alt="whatsapp">
@@ -127,7 +143,9 @@
         </section>
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

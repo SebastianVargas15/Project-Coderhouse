@@ -22,17 +22,21 @@ img {
         "headernav"
         "grillados"
         "footer";
-    height: 100vh;
-    min-height: 100vh;
+        height: 100vh;
+        min-height: 100vh;
     /*mantiene footer abajo sin que se rompa*/
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
 }
 
-.containerheader {
+header {
     grid-area: headernav;
 }
 
+main{
+    grid-area: grillados;
+}
+/*
 #grillados {
     grid-area: grillados;
     display: grid;
@@ -47,6 +51,7 @@ img {
     grid-template-rows: auto auto auto auto auto;
 
 }
+*/
 
 footer {
     grid-area: footer;
@@ -65,7 +70,6 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-header a,
 footer a {
     text-decoration: none;
     width: 100%;
@@ -95,7 +99,7 @@ footer {
     top: 0%;
     width: 100%;
     height: 18px;
-    font-size: 2.1rem;
+    font-size: 2.7rem;
     background-color: rgba(0, 0, 0, 0.534);
     text-align: center;
     /*evitar que se rompa todo*/
@@ -109,47 +113,30 @@ footer {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+#parraph{
+    background-color: black;
+}
+
 /*------------------------------------------------------------------------CLASSES HEADER---------------------------------------------------------------------------------------*/
-
-
-/*
-.header__div__nav {
-   
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem; 
-} 
-*/
-
-
-
 .containerheader {
+    /*
     display: flex;
     flex-flow: row wrap;
     font-size: 1.58rem;
-
+    */
+    font-size: 1.5rem;
+}
+.container-fluid{
+    background-color: rgb(255, 255, 255);
 }
 
-
-.header {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
-
-
-}
-
-.containerheader__nav a {
-    padding: 0 0.3vw;
-    padding-right: 2vw;
-
-}
 
 .container__logo {
     padding: 0 5vw;
+}
+
+.navbar-brand{
+    height: 60px;
 }
 
 /*------------------------------------------------------------------------CLASSES HEADER---------------------------------------------------------------------------------------*/
@@ -278,18 +265,21 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-left: 2%;
+    align-items: center;
 }
 
 .footer__divsuscribete {
     position: relative;
     padding-right: 15%;
     text-align: center;
+    color: white;
+    justify-content: center;
 }
 
 .footer__divsuscribete__b {
     font-size: 1.5rem;
     font-family: serif;
-
+    color: white;
 }
 
 .footer__divwsp {
@@ -297,25 +287,19 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*
-    transform: translate(-80%,15%);
-    */
 
 }
 .footer__divwsp__img {
     width: 50px;
     height: 50px;
     text-align: center;
+    transform: translateX(10px)
 }
 
 .footer__divlogo {
     display: flex;
     align-items: center;
-    
     padding-left: 15%;
-    
-
-
 }
 
 .footer__divwsp:hover {
@@ -450,6 +434,7 @@ footer {
 .items__productos{
     width: 400px;
     height: 300px;
+    border-radius: 10%;
 }
 
 .flexcontainer__products{
@@ -503,6 +488,10 @@ footer {
     .footer__divwsp__img {
         max-width: 50px;
         max-width: 40px;
+    }
+
+    .footer__divsuscribete{
+        padding: 0%;
     }
 
 /*------------------------------------------------------------------------INDEX RESPONSIVE-------------------------------------------------------------------------------*/
