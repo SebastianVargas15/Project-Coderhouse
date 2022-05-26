@@ -240,15 +240,21 @@ footer {
 }
 
 .sectionform {
-    padding-top: 3px;
-    padding-bottom: 3px;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
 }
 .legendform{
     color: white;
     text-shadow: #161616 0 -2px;
+    font-size: 2.5rem;
     
+}
+.sectionform__div{
+    padding-bottom: 5px;
+}
+
+.forminput{
+    padding: 2px;
 }
 
 /*------------------------------------------------------------------------CLASSES FOOTER---------------------------------------------------------------------------------------*/
@@ -263,7 +269,7 @@ footer {
 .footer__div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-left: 2%;
     align-items: center;
 }
@@ -287,6 +293,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 
 }
 .footer__divwsp__img {
@@ -295,13 +302,6 @@ footer {
     text-align: center;
     transform: translateX(10px)
 }
-
-.footer__divlogo {
-    display: flex;
-    align-items: center;
-    padding-left: 15%;
-}
-
 .footer__divwsp:hover {
     color: white;
 }
@@ -442,7 +442,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     
 }
 .div__description{
@@ -481,8 +481,11 @@ footer {
     .footer{
         justify-content: center;
     }
-    .footer__divlogo{
-        padding: 0%;
+
+    .ulfooter{
+        display: inline-block;
+        transform: translateX(-58%);
+
     }
 
     .footer__divwsp__img {
@@ -492,6 +495,10 @@ footer {
 
     .footer__divsuscribete{
         padding: 0%;
+    }
+
+    .div__description{
+        max-width: 90%;
     }
 
 /*------------------------------------------------------------------------INDEX RESPONSIVE-------------------------------------------------------------------------------*/
