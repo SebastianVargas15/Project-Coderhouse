@@ -664,3 +664,32 @@ footer {
         justify-content: space-between;
     }
 }
+
+.navbar-toggler-icon{
+    background-color: rgb(208, 208, 208);
+    border-radius: 20%;
+}
+
+#dropdownproductos{
+    color: #161616;
+    text-decoration: none;
+    font-size: 1.4rem;
+
+}
+.dropdown{
+    list-style: none;
+}
+
+.navproductos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-item{
+    font-size: 1.3rem;
+}
+
+#dropdownid:hover{
+    background-color: #161616;
+    color: white;
+}
