@@ -359,20 +359,35 @@ footer {
     padding: 1%;
     padding-left: 15%;
     padding-right: 15%;
-    font-size: 1.9rem;
+    font-size: 2.2rem;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 3px;
 
-    color: whitesmoke;
+    color: rgb(21, 17, 17);
+
+}
+.ceos{
+    font-size: 2.5rem;
 
 }
 
-.main__div__p {
-    text-shadow: black 0.3rem 0.3rem 0.4rem;
-    text-shadow: black 0rem -0.2rem;
-    /* borde tipo para arriba*/
+.maticami{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.maticami img{
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 0 0 0 -2rem;
 
 }
+
+
 
 /*------------------------------------------------------------------------CLASSES PAGE QUIENES SOMOS-------------------------------------------------------------------------------*/
 
@@ -432,40 +447,32 @@ footer {
 
 .items__productos {
     width: 400px;
-    height: 300px;
+    height: 350px;
     border-radius: 10%;
 }
 
 .flexcontainer__products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 50px;
-
 }
 
 .div__description {
-    max-width: 50%;
+    width: 50%;
     font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
     color: #3e3e3e;
-    padding: 20px 20px 40px;
 }
 
 .div__description__title {
-    text-align: center;
     font-size: 3rem;
     padding-bottom: 20px;
     font-family: "LL Circular Bold Sub", Helvetica, sans-serif;
     color: black;
 
 }
-
-.div__description p {
-    padding-left: 10%;
-}
-
 
 /*-----------------------------------------------------------------------------------CHAMPIONESPAGE-----------------------------------------------------------------------------*/
 
@@ -595,7 +602,6 @@ footer {
 
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-
     .header {
         flex-direction: column;
         flex-wrap: wrap;
@@ -606,7 +612,7 @@ footer {
     }
 
     .footer {
-        justify-content: center;
+        justify-content: space-around;
         padding-left: 0%;
     }
 
@@ -663,6 +669,9 @@ footer {
         grid-template-columns: auto 300px auto;
         justify-content: space-between;
     }
+
+    /*----productos----*/
+
 }
 
 .navbar-toggler-icon{
@@ -673,11 +682,13 @@ footer {
 #dropdownproductos{
     color: #161616;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 
 }
 .dropdown{
     list-style: none;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .navproductos{
