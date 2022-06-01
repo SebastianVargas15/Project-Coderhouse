@@ -1,0 +1,31 @@
+#bodypreguntasfrec {
+
+    background-image: url(../assets/img/ChinoB_original.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.preguntasfrecuentes__section {
+    font-size: 1.8rem;
+    color: white;
+    text-shadow: black 0.9rem 0.7rem 1rem;
+}
+
+.preguntasfrecuentes__section__article__b,
+#pregspan {
+    display: flex;
+    justify-content: center;
+}
+
+.containeriframe {
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+}
+
+.iframepreg {
+    width: 30%;
+    height: 100%;
+}

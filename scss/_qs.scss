@@ -1,0 +1,82 @@
+.bodyQS {
+    background-image: url(../assets/img/SP1_original.jpg);
+
+    /* IMAGEN RESPONSIVE (poner en el resto de fondos) */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#divheaderquienessomos {
+    grid-area: headernav;
+    height: 7%;
+}
+
+#mainquienessomos {
+    grid-area: grillados;
+    height: 77.4vh;
+    overflow-y: scroll;
+    overflow-y: auto;
+}
+
+#footerquienessomos {
+    grid-area: footer;
+
+}
+
+
+
+
+
+.main__h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    color: aliceblue;
+    text-shadow: black 0.5rem 0.5rem 0.7rem;
+}
+
+.main__div {
+    padding: 1%;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 2.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+
+    color: rgb(21, 17, 17);
+
+}
+.ceos{
+    font-size: 2.5rem;
+
+}
+
+.maticami{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.maticami img{
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 0 0 0 -2rem;
+}
+@media only screen and (max-width: 400px) {
+    .main__h1 { 
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .main__h1 {
+        text-align: center;
+    }
+
+}
+
+

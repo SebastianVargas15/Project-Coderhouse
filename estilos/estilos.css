@@ -1,101 +1,48 @@
 /*------------------------------------------------------------------------MUY IMPORTANTE SIEMPRE ESTAR--------------------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Akshar&display=swap");
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
-}
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
-}
+  max-width: 100%;
+  max-height: 100%; }
 
 /*------------------------------------------------------------------------MUY IMPORTANTE SIEMPRE ESTAR--------------------------------------------------------------------------------*/
-
 #grilla {
-    display: grid;
-    grid-template-areas:
-        "headernav"
-        "grillados"
-        "footer";
-    height: 100vh;
-    min-height: 100vh;
-    /*mantiene footer abajo sin que se rompa*/
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto;
-}
+  display: grid;
+  grid-template-areas: "headernav" "grillados" "footer";
+  height: 100vh;
+  min-height: 100vh;
+  /*mantiene footer abajo sin que se rompa*/
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto; }
 
 header {
-    grid-area: headernav;
-}
+  grid-area: headernav; }
 
 main {
-    grid-area: grillados;
-}
-
-/*
-#grillados {
-    grid-area: grillados;
-    display: grid;
-    height: 100%;
-    grid-template-columns: 100%;
-    grid-template-areas:
-        "banner"
-        "sectionprincipal"
-        "sectiondestacadas"
-        "sectionpagos"
-        "sectionform";
-    grid-template-rows: auto auto auto auto auto;
-
-}
-*/
+  grid-area: grillados; }
 
 footer {
-    grid-area: footer;
-}
+  grid-area: footer; }
 
 html {
-    font-size: 62.5%;
-    min-height: 100%;
-}
+  font-size: 62.5%;
+  min-height: 100%; }
 
 body {
-    /* SI O SI DEBE TENER UN VIEWHEIGHT */
+  /* SI O SI DEBE TENER UN VIEWHEIGHT */
+  height: 100vh;
+  min-height: 100vh;
+  background-color: white; }
 
-    height: 100vh;
-    min-height: 100vh;
-    background-color: rgb(255, 255, 255);
-}
-
-footer a {
-    text-decoration: none;
-    width: 100%;
-    color: aqua;
-}
-
-a:hover {
-    color: rgb(255, 255, 255);
-}
-
-
-header,
-footer {
-
-    background-color: #212529;
-    width: 100%;
-}
-
-.containerbanner {
-    padding-bottom: 0.25rem;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-}
-
-.parrafo {
+header {
+  background-color: #212529;
+  width: 100%;
+  font-size: 1.5rem; }
+  header .parrafo {
     position: sticky;
     top: 0%;
     width: 100%;
@@ -108,599 +55,374 @@ footer {
     overflow: hidden;
     text-overflow: Ellipsis;
     /*evitar que se rompa todo*/
-    color: rgb(255, 255, 255);
-
+    color: white;
     font-variant: small-caps;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-/*------------------------------------------------------------------------CLASSES HEADER---------------------------------------------------------------------------------------*/
-.containerheader {
-    /*
-    display: flex;
-    flex-flow: row wrap;
-    font-size: 1.58rem;
-    */
-    font-size: 1.5rem;
-}
-.container__logo {
-    padding: 0 5vw;
-}
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
 .navbar-brand {
-    height: 70px;
-}
+  height: 70px; }
 
+.nav-link {
+  color: #fff !important; }
 
-.nav-link{
-    color: #fff!important;
-}
+@media only screen and (max-width: 400px) {
+  .header {
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .containerheader__nav {
+    text-align: center; } }
 
-/*------------------------------------------------------------------------CLASSES HEADER---------------------------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------------CLASSES INDEX---------------------------------------------------------------------------------------*/
-.gradient {
-    background-image: linear-gradient(to left, #3b3b3b, #313131, #282828, #1f1f1f, #161616);
-}
-
-/*------------------------------------------------------------------------CLASSES INDEX---------------------------------------------------------------------------------------*/
-
-
-
-/*--------------------------------------------------------------INDEX ClASSES SECTION PRINCIPAL----------------------------------------------------------------------------------*/
-.sectionprincipal {
-    width: 100%;
-
-}
-
-#novedades
-
-/* parrafo novedades */
-    {
-    color: white;
-    font-variant: small-caps;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 4px;
-
-    text-shadow: red 0 0, cyan 0 0;
-    letter-spacing: 6px;
-    transition: text-shadow 200ms;
-
-}
-
-#novedades:hover {
-    text-shadow: red -2.5px 0, cyan 2.5px 0;
-}
-
-#imagenesdestacadas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.imagenesgeneral {
-    width: 450px;
-    height: 300px;
-    border-radius: 10%;
-    padding: 2px;
-
-}
-
-/*--------------------------------------------------------------INDEX ClASSES SECTION PRINCIPAL----------------------------------------------------------------------------------*/
-
-/*--------------------------------------------------------------INDEX ClASSES SECTION SECONDARY----------------------------------------------------------------------------------*/
-
-.sectiondestacadas2 {
-    width: 100%;
-    height: auto;
-}
-
-.contenedordestacadas__img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 3px;
-}
-
-.contenedordestacadas__parrafo {
-    text-align: center;
-    color: white;
-    font-variant: small-caps;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: 1.7rem;
-    padding-top: 4px;
-
-    text-shadow: red 0 0, cyan 0 0;
-    letter-spacing: 6px;
-    transition: text-shadow 200ms;
-}
-
-.contenedordestacadas__parrafo:hover {
-    text-shadow: red -2.5px 0, cyan 2.5px 0;
-}
-
-/*--------------------------------------------------------------INDEX ClASSES SECTION PAGOS Y FORM----------------------------------------------------------------------------------*/
-
-
-
-
-.sectionpagos {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    background-image: url(../assets/img/SP1_original.jpg);
-}
-
-.sectionform {
-    text-align: center;
-    font-size: 2.0rem;
-}
-
-.legendform {
-    color: white;
-    text-shadow: #161616 0 -2px;
-    font-size: 2.5rem;
-
-}
-
-.sectionform__div {
-    padding-bottom: 5px;
-}
-
-.forminput {
-    padding: 2px;
-}
-
-/*------------------------------------------------------------------------CLASSES FOOTER---------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .header {
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .containerheader__nav {
+    text-align: center; } }
 
 footer {
-    font-size: 1.5rem;
+  background-color: #212529;
+  width: 100%;
+  font-size: 1.5rem;
+  width: 100%;
+  padding-top: 0.5%; }
+  footer a {
+    text-decoration: none;
     width: 100%;
-    padding-top: 0.5%;
-}
+    color: aqua; }
+    footer a:hover {
+      color: white; }
 
 .footer,
 .footer__div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-left: 2%;
-    align-items: center;
-}
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-left: 2%;
+  align-items: center; }
 
 .footer__divsuscribete {
-    position: relative;
-    padding-right: 15%;
-    text-align: center;
-    color: white;
-    justify-content: center;
-}
+  position: relative;
+  padding-right: 15%;
+  text-align: center;
+  color: white;
+  justify-content: center; }
 
 .footer__divsuscribete__b {
-    font-size: 1.5rem;
-    font-family: serif;
-    color: white;
-}
+  font-size: 1.5rem;
+  font-family: serif;
+  color: white; }
 
 .footer__divwsp {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-
-}
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white; }
 
 .footer__divwsp__img {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    transform: translateX(10px)
-}
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  transform: translateX(10px); }
 
 .footer__divwsp:hover {
-    color: white;
-}
+  color: white; }
 
 .footer__links {
-    padding-bottom: 0.3%;
-}
+  padding-bottom: 0.3%; }
 
-/*------------------------------------------------------------------------CLASSES FOOTER---------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 400px) {
+  .footer {
+    justify-content: center;
+    padding-left: 0%; }
+  ol.footer__links {
+    padding-left: 0%; }
+  .footer__div {
+    padding-left: 0%; }
+  .ulfooter {
+    padding: 0px; }
+  .footer__divwsp__img {
+    max-width: 50px;
+    max-width: 40px; }
+  .footer__divsuscribete {
+    padding: 0%; }
+  .div__description {
+    max-width: 90%; } }
 
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .footer {
+    justify-content: space-around;
+    padding-left: 0%; }
+  .footer__div {
+    padding-left: 0%; }
+  .ulfooter {
+    padding: 0px; }
+  .footer__divsuscribete {
+    padding: 0%; }
+  .div__description {
+    max-width: 90%; } }
 
+.containerbanner {
+  padding-bottom: 0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem; }
 
+.gradient {
+  background-image: linear-gradient(to left, #3b3b3b, #313131, #282828, #1f1f1f, #161616); }
 
+/*--------------------------------------------------------------INDEX ClASSES SECTION PRINCIPAL----------------------------------------------------------------------------------*/
+.sectionprincipal {
+  width: 100%; }
 
-/*------------------------------------------------------------------------CLASSES PAGE QUIENES SOMOS-------------------------------------------------------------------------------*/
+#novedades {
+  color: white;
+  font-variant: small-caps;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 4px;
+  text-shadow: red 0 0, cyan 0 0;
+  letter-spacing: 6px;
+  transition: text-shadow 200ms; }
+
+#novedades:hover {
+  text-shadow: red -2.5px 0, cyan 2.5px 0; }
+
+#imagenesdestacadas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.imagenesgeneral {
+  width: 450px;
+  height: 300px;
+  border-radius: 10%;
+  padding: 2px; }
+
+/*--------------------------------------------------------------INDEX ClASSES SECTION PRINCIPAL----------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------INDEX ClASSES SECTION SECONDARY----------------------------------------------------------------------------------*/
+.sectiondestacadas2 {
+  width: 100%;
+  height: auto; }
+
+.contenedordestacadas__img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 3px; }
+
+.contenedordestacadas__parrafo {
+  text-align: center;
+  color: white;
+  font-variant: small-caps;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 1.7rem;
+  padding-top: 4px;
+  text-shadow: red 0 0, cyan 0 0;
+  letter-spacing: 6px;
+  transition: text-shadow 200ms; }
+
+.contenedordestacadas__parrafo:hover {
+  text-shadow: red -2.5px 0, cyan 2.5px 0; }
+
+/*--------------------------------------------------------------INDEX ClASSES SECTION SECONDARY----------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------INDEX ClASSES SECTION PAGOS Y FORM----------------------------------------------------------------------------------*/
+.sectionpagos {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  background-image: url(../assets/img/SP1_original.jpg); }
+
+.sectionform {
+  text-align: center;
+  font-size: 2.0rem; }
+
+.legendform {
+  color: white;
+  text-shadow: #161616 0 -2px;
+  font-size: 2.5rem; }
+
+.sectionform__div {
+  padding-bottom: 5px; }
+
+.forminput {
+  padding: 2px; }
+
+/*--------------------------------------------------------------INDEX ClASSES SECTION PAGOS Y FORM----------------------------------------------------------------------------------*/
+@media only screen and (max-width: 400px) {
+  .imagenesgeneral {
+    height: 200px;
+    width: 200px;
+    padding: 2px; }
+  #imagenesdestacadas {
+    flex-wrap: wrap; }
+  .contenedordestacadas__img {
+    flex-wrap: wrap; }
+  .sectionpagos__div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto; } }
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .imagenesgeneral {
+    height: 210px;
+    width: 210px;
+    padding: 2px; }
+  #imagenesdestacadas {
+    flex-wrap: wrap; }
+  .sectionpagos__div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto; }
+  .sectionpagos__div__span {
+    padding-top: 14px; } }
+
 .bodyQS {
-    background-image: url(../assets/img/SP1_original.jpg);
-
-    /* IMAGEN RESPONSIVE (poner en el resto de fondos) */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
+  background-image: url(../assets/img/SP1_original.jpg);
+  /* IMAGEN RESPONSIVE (poner en el resto de fondos) */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
 
 #divheaderquienessomos {
-    grid-area: headernav;
-    height: 7%;
-}
+  grid-area: headernav;
+  height: 7%; }
 
 #mainquienessomos {
-    grid-area: grillados;
-    height: 77.4vh;
-    overflow-y: scroll;
-    overflow-y: auto;
-}
+  grid-area: grillados;
+  height: 77.4vh;
+  overflow-y: scroll;
+  overflow-y: auto; }
 
 #footerquienessomos {
-    grid-area: footer;
-
-}
-
-
-
-
+  grid-area: footer; }
 
 .main__h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 5rem;
-    color: aliceblue;
-    text-shadow: black 0.5rem 0.5rem 0.7rem;
-}
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  color: aliceblue;
+  text-shadow: black 0.5rem 0.5rem 0.7rem; }
 
 .main__div {
-    padding: 1%;
-    padding-left: 15%;
-    padding-right: 15%;
-    font-size: 2.2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 3px;
+  padding: 1%;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 2.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+  color: #151111; }
 
-    color: rgb(21, 17, 17);
+.ceos {
+  font-size: 2.5rem; }
 
-}
-.ceos{
-    font-size: 2.5rem;
+.maticami {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem; }
 
-}
+.maticami img {
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  border: 2px solid black;
+  margin: 0 0 0 -2rem; }
 
-.maticami{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 2rem;
-}
+@media only screen and (max-width: 400px) {
+  .main__h1 {
+    text-align: center; } }
 
-.maticami img{
-    border-radius: 100%;
-    width: 120px;
-    height: 120px;
-    border: 2px solid rgb(0, 0, 0);
-    margin: 0 0 0 -2rem;
-
-}
-
-
-
-/*------------------------------------------------------------------------CLASSES PAGE QUIENES SOMOS-------------------------------------------------------------------------------*/
-
-
-/*------------------------------------------------------------------------CLASSES PAGE PREGUNTAS FREC-------------------------------------------------------------------------------*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .main__h1 {
+    text-align: center; } }
 
 #bodypreguntasfrec {
-
-    background-image: url(../assets/img/ChinoB_original.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
+  background-image: url(../assets/img/ChinoB_original.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
 
 .preguntasfrecuentes__section {
-    font-size: 1.8rem;
-    color: white;
-    text-shadow: black 0.9rem 0.7rem 1rem;
-}
+  font-size: 1.8rem;
+  color: white;
+  text-shadow: black 0.9rem 0.7rem 1rem; }
 
 .preguntasfrecuentes__section__article__b,
 #pregspan {
-    display: flex;
-    justify-content: center;
-}
+  display: flex;
+  justify-content: center; }
 
 .containeriframe {
-    display: flex;
-    justify-content: center;
-    height: 40vh;
-}
+  display: flex;
+  justify-content: center;
+  height: 40vh; }
 
 .iframepreg {
-    width: 30%;
-    height: 100%;
-}
+  width: 30%;
+  height: 100%; }
 
-
-
-/*------------------------------------------------------------------------CLASSES PAGE PREGUNTAS FREC-------------------------------------------------------------------------------*/
-
-
-/*------------------------------------------------------------------------CLASSES PAGE PRODUCTOS-------------------------------------------------------------------------------*/
 .title__productos {
-    font-size: 4.5rem;
-    text-align: center;
-    font-family: 'Akshar', sans-serif;
-}
+  font-size: 4.5rem;
+  text-align: center;
+  font-family: 'Akshar', sans-serif; }
 
 .title__productosh2 {
-    font-size: 3rem;
-    text-align: center;
-    font-family: 'Akshar', sans-serif;
-    padding: 10px;
-}
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Akshar', sans-serif;
+  padding: 10px; }
 
 .items__productos {
-    width: 400px;
-    height: 350px;
-    border-radius: 10%;
-}
+  width: 400px;
+  height: 350px;
+  border-radius: 10%; }
 
 .flexcontainer__products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 50px;
-}
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px; }
 
 .div__description {
-    width: 50%;
-    font-size: 2rem;
-    font-family: 'Times New Roman', Times, serif;
-    color: #3e3e3e;
-}
+  width: 50%;
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: #3e3e3e; }
 
 .div__description__title {
-    font-size: 3rem;
-    padding-bottom: 20px;
-    font-family: "LL Circular Bold Sub", Helvetica, sans-serif;
-    color: black;
+  font-size: 3rem;
+  padding-bottom: 20px;
+  font-family: "LL Circular Bold Sub", Helvetica, sans-serif;
+  color: black; }
 
-}
+.navbar-toggler-icon {
+  background-color: #d0d0d0;
+  border-radius: 20%; }
 
-/*-----------------------------------------------------------------------------------CHAMPIONESPAGE-----------------------------------------------------------------------------*/
+#dropdownproductos {
+  color: #161616;
+  text-decoration: none;
+  font-size: 1.5rem; }
 
-.championestitle {
-    text-align: center;
-}
+.dropdown {
+  list-style: none;
+  padding-left: 4px;
+  padding-right: 4px; }
 
-#championesgrid {
-    display: grid;
-    grid-template-columns: auto 500px auto;
-    justify-content: space-between;
-}
+.navproductos {
+  display: flex;
+  justify-content: space-between; }
 
-.containernavbar1 {
-    grid-column: 1/2;
+.dropdown-item {
+  font-size: 1.3rem; }
 
-}
-
-.containercarrousels {
-    grid-column: 2/3;
-}
-
-.containernavbar2 {
-    grid-column: 3/4;
-}
-
-.containeritems {
-    padding: 10px;
-}
-
-
-.nav-link2{
-    text-decoration: none;
-    color: rgb(63, 63, 63);
-}
-
-.nav-link2:hover{
-    color: black;
-}
-
-
-/*------------------------------------------------------------------------CLASSES PAGE PRODUCTOS-------------------------------------------------------------------------------*/
-
-
-
-
-
-@media only screen and (max-width: 400px) {
-
-    .header {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .containerheader__nav {
-        text-align: center;
-    }
-
-    .footer {
-        justify-content: center;
-        padding-left: 0% ;
-    }
-    ol.footer__links{
-        padding-left: 0%;
-    }
-
-    .footer__div{
-        padding-left: 0%;
-    }
-
-    .ulfooter{
-        padding: 0px;
-    }
-
-    .footer__divwsp__img {
-        max-width: 50px;
-        max-width: 40px;
-    }
-
-    .footer__divsuscribete {
-        padding: 0%;
-    }
-
-    .div__description {
-        max-width: 90%;
-    }
-    /*------------------------------------------------------------------------INDEX RESPONSIVE-------------------------------------------------------------------------------*/
-
-    .imagenesgeneral {
-        height: 200px;
-        width: 200px;
-        padding: 2px;
-
-    }
-
-    #imagenesdestacadas {
-        flex-wrap: wrap;
-    }
-
-    .contenedordestacadas__img {
-        flex-wrap: wrap;
-    }
-
-
-    .sectionpagos__div {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin: auto;
-    }
-    .main__h1 {
-        text-align: center;
-    }
-
-    /*------------------------------------------------------------------------INDEX RESPONSIVE-------------------------------------------------------------------------------*/
-
-  /*CHAMPIONES*/
-
-  #championesgrid {
-    display: grid;
-    grid-template-columns: auto 270px auto;
-    justify-content: space-between;
-}
-    
-
-}
-
-
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-    .header {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .containerheader__nav {
-        text-align: center;
-    }
-
-    .footer {
-        justify-content: space-around;
-        padding-left: 0%;
-    }
-
-    .footer__div{
-        padding-left: 0%;
-    }
-
-    .ulfooter{
-        padding: 0px;
-    }
-
-    .footer__divsuscribete {
-        padding: 0%;
-    }
-
-    .div__description {
-        max-width: 90%;
-    }
-
-    /*INDEX*/
-
-    .imagenesgeneral {
-        height: 210px;
-        width: 210px;
-        padding: 2px;
-
-    }
-
-    #imagenesdestacadas {
-        flex-wrap: wrap;
-    }
-
-    .sectionpagos__div {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin: auto;
-    }
-
-    .sectionpagos__div__span {
-        padding-top: 14px;
-    }
-
-    /*QUIENESOMOS*/
-    .main__h1 {
-        text-align: center;
-    }
-
-
-    /*CHAMPIONES*/
-
-    #championesgrid {
-        display: grid;
-        grid-template-columns: auto 300px auto;
-        justify-content: space-between;
-    }
-
-    /*----productos----*/
-
-}
-
-.navbar-toggler-icon{
-    background-color: rgb(208, 208, 208);
-    border-radius: 20%;
-}
-
-#dropdownproductos{
-    color: #161616;
-    text-decoration: none;
-    font-size: 1.5rem;
-
-}
-.dropdown{
-    list-style: none;
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-.navproductos{
-    display: flex;
-    justify-content: space-between;
-}
-
-.dropdown-item{
-    font-size: 1.3rem;
-}
-
-#dropdownid:hover{
-    background-color: #161616;
-    color: white;
-}
+#dropdownid:hover {
+  background-color: #161616;
+  color: white; }

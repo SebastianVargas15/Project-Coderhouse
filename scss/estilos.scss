@@ -1,0 +1,60 @@
+/*------------------------------------------------------------------------MUY IMPORTANTE SIEMPRE ESTAR--------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*------------------------------------------------------------------------MUY IMPORTANTE SIEMPRE ESTAR--------------------------------------------------------------------------------*/
+#grilla {
+    display: grid;
+    grid-template-areas:
+        "headernav"
+        "grillados"
+        "footer";
+    height: 100vh;
+    min-height: 100vh;
+    /*mantiene footer abajo sin que se rompa*/
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+
+header {
+    grid-area: headernav;
+}
+
+main {
+    grid-area: grillados;
+}
+
+footer {
+    grid-area: footer;
+}
+
+html {
+    font-size: 62.5%;
+    min-height: 100%;
+}
+
+body {
+    /* SI O SI DEBE TENER UN VIEWHEIGHT */
+    height: 100vh;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+@import"variables";
+@import "header";
+@import "footer";
+@import "index";
+@import "qs";
+@import "pf";
+@import "productos";

@@ -1,0 +1,51 @@
+header{
+    background-color: $color-dark;
+    width: 100%;
+    font-size: 1.5rem;
+    .parrafo {
+        position: sticky;
+        top: 0%;
+        width: 100%;
+        height: 18px;
+        font-size: 2.7rem;
+        background-color: $color-dark;
+        text-align: center;
+        /*evitar que se rompa todo*/
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: Ellipsis;
+        /*evitar que se rompa todo*/
+        color: rgb(255, 255, 255);
+    
+        font-variant: small-caps;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    } 
+}
+.navbar-brand{
+    height: 70px;
+}
+.nav-link{
+    color: #fff!important;
+}
+
+@media only screen and (max-width: 400px) {
+    .header {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .containerheader__nav {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .header {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .containerheader__nav {
+        text-align: center;
+    }
+}

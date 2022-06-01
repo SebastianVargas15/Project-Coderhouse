@@ -1,0 +1,161 @@
+.containerbanner {
+    padding-bottom: 0.25rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+.gradient {
+    background-image: linear-gradient(to left, #3b3b3b, #313131, #282828, #1f1f1f, #161616);
+}
+/*--------------------------------------------------------------INDEX ClASSES SECTION PRINCIPAL----------------------------------------------------------------------------------*/
+
+.sectionprincipal {
+    width: 100%;
+
+}
+#novedades
+/* parrafo novedades */
+    {
+    color: white;
+    font-variant: small-caps;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 4px;
+
+    text-shadow: red 0 0, cyan 0 0;
+    letter-spacing: 6px;
+    transition: text-shadow 200ms;
+
+}
+#novedades:hover {
+    text-shadow: red -2.5px 0, cyan 2.5px 0;
+}
+
+#imagenesdestacadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imagenesgeneral {
+    width: 450px;
+    height: 300px;
+    border-radius: 10%;
+    padding: 2px;
+
+}
+/*--------------------------------------------------------------INDEX ClASSES SECTION PRINCIPAL----------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------INDEX ClASSES SECTION SECONDARY----------------------------------------------------------------------------------*/
+
+.sectiondestacadas2 {
+    width: 100%;
+    height: auto;
+}
+
+.contenedordestacadas__img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 3px;
+}
+
+.contenedordestacadas__parrafo {
+    text-align: center;
+    color: white;
+    font-variant: small-caps;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.7rem;
+    padding-top: 4px;
+
+    text-shadow: red 0 0, cyan 0 0;
+    letter-spacing: 6px;
+    transition: text-shadow 200ms;
+}
+
+.contenedordestacadas__parrafo:hover {
+    text-shadow: red -2.5px 0, cyan 2.5px 0;
+}
+/*--------------------------------------------------------------INDEX ClASSES SECTION SECONDARY----------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------INDEX ClASSES SECTION PAGOS Y FORM----------------------------------------------------------------------------------*/
+
+
+
+
+.sectionpagos {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    background-image: url(../assets/img/SP1_original.jpg);
+}
+
+.sectionform {
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+.legendform {
+    color: white;
+    text-shadow: #161616 0 -2px;
+    font-size: 2.5rem;
+
+}
+
+.sectionform__div {
+    padding-bottom: 5px;
+}
+
+.forminput {
+    padding: 2px;
+}
+/*--------------------------------------------------------------INDEX ClASSES SECTION PAGOS Y FORM----------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 400px) {
+    .imagenesgeneral {
+        height: 200px;
+        width: 200px;
+        padding: 2px;
+
+    }
+
+    #imagenesdestacadas {
+        flex-wrap: wrap;
+    }
+
+    .contenedordestacadas__img {
+        flex-wrap: wrap;
+    }
+
+
+    .sectionpagos__div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .imagenesgeneral {
+        height: 210px;
+        width: 210px;
+        padding: 2px;
+
+    }
+
+    #imagenesdestacadas {
+        flex-wrap: wrap;
+    }
+
+    .sectionpagos__div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .sectionpagos__div__span {
+        padding-top: 14px;
+    }
+}

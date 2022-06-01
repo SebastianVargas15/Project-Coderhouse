@@ -1,0 +1,73 @@
+.title__productos {
+    font-size: 4.5rem;
+    text-align: center;
+    font-family: 'Akshar', sans-serif;
+}
+
+.title__productosh2 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Akshar', sans-serif;
+    padding: 10px;
+}
+
+.items__productos {
+    width: 400px;
+    height: 350px;
+    border-radius: 10%;
+}
+
+.flexcontainer__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.div__description {
+    width: 50%;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #3e3e3e;
+}
+
+.div__description__title {
+    font-size: 3rem;
+    padding-bottom: 20px;
+    font-family: "LL Circular Bold Sub", Helvetica, sans-serif;
+    color: black;
+
+}
+
+
+.navbar-toggler-icon{
+    background-color: rgb(208, 208, 208);
+    border-radius: 20%;
+}
+
+#dropdownproductos{
+    color: #161616;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+.dropdown{
+    list-style: none;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.navproductos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-item{
+    font-size: 1.3rem;
+}
+
+#dropdownid:hover{
+    background-color: #161616;
+    color: white;
+}
