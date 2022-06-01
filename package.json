@@ -1,0 +1,23 @@
+{
+  "name": "project-coderhouse",
+  "version": "1.0.0",
+  "description": "Proyecto tienda online\r Carlos Sebastian Vargas de los Santos\r 21/05/2022 - Desafio 4 - Animations commit 3 - animations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianVargas15/Project-Coderhouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastianVargas15/Project-Coderhouse/issues"
+  },
+  "homepage": "https://github.com/SebastianVargas15/Project-Coderhouse#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
