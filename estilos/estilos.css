@@ -378,30 +378,46 @@ footer {
   font-family: 'Akshar', sans-serif;
   padding: 10px; }
 
-.items__productos {
-  width: 400px;
-  height: 350px;
-  border-radius: 10%; }
-
+/* .items__productos {
+    width: 400px;
+    height: 350px;
+    border-radius: 10%;
+} */
 .flexcontainer__products {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 50px; }
+  .flexcontainer__products div {
+    width: 50%;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #3e3e3e; }
+    .flexcontainer__products div h2 {
+      font-size: 3rem;
+      padding-bottom: 20px;
+      font-family: "LL Circular Bold Sub", Helvetica, sans-serif;
+      color: black; }
+  .flexcontainer__products img {
+    width: 400px;
+    height: 350px;
+    border-radius: 10%; }
 
-.div__description {
-  width: 50%;
-  font-size: 2rem;
-  font-family: 'Times New Roman', Times, serif;
-  color: #3e3e3e; }
+/* .div__description {
+    width: 50%;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #3e3e3e;
+}
 
 .div__description__title {
-  font-size: 3rem;
-  padding-bottom: 20px;
-  font-family: "LL Circular Bold Sub", Helvetica, sans-serif;
-  color: black; }
+    font-size: 3rem;
+    padding-bottom: 20px;
+    font-family: "LL Circular Bold Sub", Helvetica, sans-serif;
+    color: black;
 
+} */
 .navbar-toggler-icon {
   background-color: #d0d0d0;
   border-radius: 20%; }
@@ -426,3 +442,42 @@ footer {
 #dropdownid:hover {
   background-color: #161616;
   color: white; }
+
+.championestitle {
+  text-align: center; }
+
+#championesgrid {
+  display: grid;
+  grid-template-columns: auto 500px auto;
+  justify-content: space-between; }
+
+.containernavbar1 {
+  grid-column: 1/2; }
+
+.containercarrousels {
+  grid-column: 2/3; }
+
+.containernavbar2 {
+  grid-column: 3/4; }
+
+.containeritems {
+  padding: 10px; }
+
+.nav-link2 {
+  text-decoration: none;
+  color: #3f3f3f; }
+
+.nav-link2:hover {
+  color: black; }
+
+@media only screen and (max-width: 400px) {
+  #championesgrid {
+    display: grid;
+    grid-template-columns: auto 270px auto;
+    justify-content: space-between; } }
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  #championesgrid {
+    display: grid;
+    grid-template-columns: auto 300px auto;
+    justify-content: space-between; } }
