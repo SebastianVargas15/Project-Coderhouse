@@ -1,17 +1,20 @@
 #bodypreguntasfrec {
 
-    background-image: url(../assets/img/ChinoB_original.jpg);
+    background-image: url(../assets/img/backgroundnike.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-.preguntasfrecuentes__section {
-    font-size: 1.8rem;
-    color: white;
-    text-shadow: black 0.9rem 0.7rem 1rem;
+#mainpf{
+    h1{
+        @include shadowtittle;
+        text-align: center;
+    }
 }
+
+.preguntasfrecuentes__section {@include parraphs;}
 
 .preguntasfrecuentes__section__article__b,
 #pregspan {
@@ -26,6 +29,6 @@
 }
 
 .iframepreg {
-    width: 30%;
+    width: 350px;
     height: 100%;
 }
