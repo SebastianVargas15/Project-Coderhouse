@@ -516,6 +516,8 @@ main h1 {
   justify-content: center;
   text-align: center;
   font-size: 2.0rem; }
+  .form-contacto div {
+    padding-bottom: 7px; }
 
 .contacto-whatsapp {
   padding-top: 30px; }
@@ -526,7 +528,8 @@ main h1 {
     color: white;
     font-family: "Source Code Pro", monospace;
     text-shadow: black 0.5rem 0.5rem 0.7rem;
-    font-size: 3.5rem; }
+    font-size: 3.5rem;
+    text-align: center; }
   .contacto-whatsapp div {
     display: flex;
     justify-content: center;

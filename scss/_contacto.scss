@@ -17,7 +17,9 @@ main {
     justify-content: center;
     text-align: center;
     font-size: 2.0rem;
-
+    div{
+        padding-bottom: 7px
+    }
     legend {
         @extend .legendform;
 
@@ -29,6 +31,7 @@ main {
     h3{
         @include shadowtittle;
         font-size: 3.5rem;
+        text-align: center;
     }
     div{
         display: flex;
