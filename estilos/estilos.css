@@ -1,6 +1,7 @@
 /*------------------------------------------------------------------------MUY IMPORTANTE SIEMPRE ESTAR--------------------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Akshar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Akshar&family=Source+Code+Pro:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -65,6 +66,9 @@ header {
 
 .nav-link {
   color: #fff !important; }
+
+.nav-item {
+  font-weight: 500; }
 
 @media only screen and (max-width: 400px) {
   .header {
@@ -177,14 +181,14 @@ footer {
 
 #novedades {
   color: white;
-  font-variant: small-caps;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   text-align: center;
-  font-size: 2rem;
   padding-top: 4px;
   text-shadow: red 0 0, cyan 0 0;
   letter-spacing: 6px;
   transition: text-shadow 200ms; }
+  #novedades h2 {
+    font-size: 4rem; }
 
 #novedades:hover {
   text-shadow: red -2.5px 0, cyan 2.5px 0; }
@@ -210,19 +214,20 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 3px; }
+  padding-top: 15px; }
 
 .contenedordestacadas__parrafo {
   text-align: center;
   color: white;
-  font-variant: small-caps;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   text-align: center;
-  font-size: 1.7rem;
-  padding-top: 4px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-shadow: red 0 0, cyan 0 0;
   letter-spacing: 6px;
   transition: text-shadow 200ms; }
+  .contenedordestacadas__parrafo h2 {
+    font-size: 4rem; }
 
 .contenedordestacadas__parrafo:hover {
   text-shadow: red -2.5px 0, cyan 2.5px 0; }
