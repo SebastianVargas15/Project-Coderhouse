@@ -3,33 +3,38 @@
     padding-left: 0.25rem;
     padding-right: 0.25rem;
 }
+
 .gradient {
     background-image: linear-gradient(to left, #3b3b3b, #313131, #282828, #1f1f1f, #161616);
 }
+
 /*--------------------------------------------------------------INDEX ClASSES SECTION PRINCIPAL----------------------------------------------------------------------------------*/
 
 .sectionprincipal {
     width: 100%;
 
 }
+
 #novedades
+
 /* parrafo novedades */
     {
-    color: white;
-    font-family: $fira-sans;
-    text-align: center;
-    padding-top: 4px;
-
-    text-shadow: red 0 0, cyan 0 0;
-    letter-spacing: 6px;
-    transition: text-shadow 200ms;
-    h2{
+        text-align: center;
+        color: white;
+        font-family: $fira-sans;
+        padding-top: 4px;
+        text-shadow: red 0 0, cyan 0 0;
+        letter-spacing: 4px;
+        transition: text-shadow 200ms;
+    h1 {
         font-size: 4rem;
+
     }
 
-}
-#novedades:hover {
-    text-shadow: red -2.5px 0, cyan 2.5px 0;
+    h1:hover {
+        text-shadow: red -2.0px 0, cyan 2.0px 0;
+    }
+
 }
 
 #imagenesdestacadas {
@@ -45,6 +50,7 @@
     padding: 2px;
 
 }
+
 /*--------------------------------------------------------------INDEX ClASSES SECTION PRINCIPAL----------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------INDEX ClASSES SECTION SECONDARY----------------------------------------------------------------------------------*/
 
@@ -71,7 +77,8 @@
     text-shadow: red 0 0, cyan 0 0;
     letter-spacing: 6px;
     transition: text-shadow 200ms;
-    h2{
+
+    h2 {
         font-size: 4rem;
     }
 }
@@ -79,6 +86,7 @@
 .contenedordestacadas__parrafo:hover {
     text-shadow: red -2.5px 0, cyan 2.5px 0;
 }
+
 /*--------------------------------------------------------------INDEX ClASSES SECTION SECONDARY----------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------INDEX ClASSES SECTION PAGOS Y FORM----------------------------------------------------------------------------------*/
 
@@ -90,7 +98,8 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     background-image: url(../assets/img/SP1_original.jpg);
-    span{
+
+    span {
         font-weight: 600;
     }
 }
@@ -114,6 +123,7 @@
 .forminput {
     padding: 2px;
 }
+
 /*--------------------------------------------------------------INDEX ClASSES SECTION PAGOS Y FORM----------------------------------------------------------------------------------*/
 
 @media only screen and (max-width: 400px) {

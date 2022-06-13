@@ -180,18 +180,17 @@ footer {
   width: 100%; }
 
 #novedades {
+  text-align: center;
   color: white;
   font-family: "Fira Sans", sans-serif;
-  text-align: center;
   padding-top: 4px;
   text-shadow: red 0 0, cyan 0 0;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   transition: text-shadow 200ms; }
-  #novedades h2 {
+  #novedades h1 {
     font-size: 4rem; }
-
-#novedades:hover {
-  text-shadow: red -2.5px 0, cyan 2.5px 0; }
+  #novedades h1:hover {
+    text-shadow: red -2.0px 0, cyan 2.0px 0; }
 
 #imagenesdestacadas {
   display: flex;
@@ -399,11 +398,6 @@ footer {
   font-family: 'Akshar', sans-serif;
   padding: 10px; }
 
-/* .items__productos {
-    width: 400px;
-    height: 350px;
-    border-radius: 10%;
-} */
 .flexcontainer__products {
   display: flex;
   flex-wrap: wrap;
@@ -425,20 +419,6 @@ footer {
     height: 350px;
     border-radius: 10%; }
 
-/* .div__description {
-    width: 50%;
-    font-size: 2rem;
-    font-family: 'Times New Roman', Times, serif;
-    color: #3e3e3e;
-}
-
-.div__description__title {
-    font-size: 3rem;
-    padding-bottom: 20px;
-    font-family: "LL Circular Bold Sub", Helvetica, sans-serif;
-    color: black;
-
-} */
 .navbar-toggler-icon {
   background-color: #d0d0d0;
   border-radius: 20%; }
@@ -510,7 +490,7 @@ footer {
   background-attachment: fixed;
   background-size: cover; }
 
-main h1 {
+.main__contacto h1 {
   display: flex;
   justify-content: center;
   font-size: 5rem;
