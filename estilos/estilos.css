@@ -234,12 +234,17 @@ footer {
 /*--------------------------------------------------------------INDEX ClASSES SECTION SECONDARY----------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------INDEX ClASSES SECTION PAGOS Y FORM----------------------------------------------------------------------------------*/
 .sectionpagos {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
-  background-image: url(../assets/img/SP1_original.jpg); }
+  border-bottom: solid 2px white;
+  border-top: solid 2px white; }
   .sectionpagos span {
-    font-weight: 600; }
+    font-weight: 600;
+    color: #fff; }
 
 .sectionform {
   text-align: center;
@@ -387,7 +392,10 @@ footer {
   width: 350px;
   height: 100%; }
 
-.title__productos {
+.body-products {
+  background-color: #E5E5E5; }
+
+.title__productos, .title__mainpages a h1 {
   font-size: 4.5rem;
   text-align: center;
   font-family: 'Akshar', sans-serif; }
@@ -399,6 +407,8 @@ footer {
   padding: 10px; }
 
 .flexcontainer__products {
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -444,12 +454,24 @@ footer {
   background-color: #161616;
   color: white; }
 
+@media only screen and (max-width: 400px) {
+  .flexcontainer__products {
+    text-align: center; }
+    .flexcontainer__products img {
+      width: 300px;
+      height: 350px; } }
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .flexcontainer__products img {
+    width: 300px;
+    height: 350px; } }
+
 .championestitle {
   text-align: center; }
 
 #championesgrid {
   display: grid;
-  grid-template-columns: auto 500px auto;
+  grid-template-columns: auto auto auto;
   justify-content: space-between; }
 
 .containernavbar1 {
@@ -531,3 +553,35 @@ footer {
       font-size: 2rem;
       color: #fff;
       letter-spacing: 2px; }
+
+.title__mainpages {
+  display: flex;
+  justify-content: center; }
+  .title__mainpages a {
+    color: black;
+    text-decoration: none; }
+  .title__mainpages a:hover {
+    color: black;
+    text-decoration: none; }
+
+.nav-pages {
+  background-color: #212529;
+  padding: 2px 0;
+  display: flex;
+  justify-content: center;
+  border: 5px solid #212529; }
+  .nav-pages span {
+    font-size: 1.7rem;
+    color: white; }
+  .nav-pages a {
+    font-size: 1.7rem;
+    color: white;
+    text-decoration: none;
+    padding: 0 7px; }
+  .nav-pages a:hover {
+    font-size: 1.9rem;
+    color: aqua; }
+
+#pageactual {
+  font-size: 1.9rem;
+  color: aqua; }

@@ -94,13 +94,19 @@
 
 
 .sectionpagos {
+margin-top: 10px;
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-    background-image: url(../assets/img/SP1_original.jpg);
+
+border-bottom: solid 2px rgb(255, 255, 255);
+border-top: solid 2px rgb(255, 255, 255);
 
     span {
         font-weight: 600;
+        color: #fff;
     }
 }
 

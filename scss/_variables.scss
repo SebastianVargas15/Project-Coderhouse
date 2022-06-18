@@ -22,3 +22,9 @@ $fira-sans:'Fira Sans', sans-serif;
     font-family: $h1titles;
     text-shadow: black 0.5rem 0.5rem 0.7rem;
 }
+
+@mixin titleproductos {
+    font-size: 4.5rem;
+    text-align: center;
+    font-family: 'Akshar', sans-serif;
+}

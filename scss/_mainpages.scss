@@ -1,0 +1,47 @@
+
+.title__mainpages{
+    display: flex;
+    justify-content: center;
+    a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        h1{
+            @extend .title__productos;
+        }
+    }
+
+    a:hover{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+}
+
+
+.nav-pages{
+    background-color: $color-dark;
+    padding: 2px 0;
+    display: flex;
+    justify-content: center;
+    border: 5px solid $color-dark;
+    span{
+        font-size: 1.7rem;
+        color: rgb(255, 255, 255);
+    }
+    a{
+        font-size: 1.7rem;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        
+        padding: 0 7px;
+    }
+
+    a:hover{
+        font-size: 1.9rem;
+        color: aqua;
+    }
+}
+
+#pageactual{
+    font-size: 1.9rem;
+        color: aqua;
+}
