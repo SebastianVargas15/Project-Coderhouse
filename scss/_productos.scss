@@ -3,6 +3,8 @@
 }
 .title__productos {
     @include titleproductos;
+    background-color: $color-dark;
+    color: #fff;
 }
 .title__productosh2 {
     font-size: 3rem;

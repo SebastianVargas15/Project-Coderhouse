@@ -2,17 +2,23 @@
 .title__mainpages{
     display: flex;
     justify-content: center;
+    background-color: $color-dark;
     a{
         color: rgb(0, 0, 0);
         text-decoration: none;
         h1{
             @extend .title__productos;
+            color: #fff;
+            border-bottom: 2px solid transparent;
         }
     }
 
     a:hover{
+
+        h1{
         color: rgb(0, 0, 0);
-        text-decoration: none;
+        border-bottom: 2px solid rgb(0, 0, 0);
+        }
     }
 }
 
@@ -22,7 +28,6 @@
     padding: 2px 0;
     display: flex;
     justify-content: center;
-    border: 5px solid $color-dark;
     span{
         font-size: 1.7rem;
         color: rgb(255, 255, 255);
@@ -44,4 +49,29 @@
 #pageactual{
     font-size: 1.9rem;
         color: aqua;
+}
+
+
+
+.container_pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    a , p{
+        font-size: 2.0rem;
+        color: $color-gray;
+        text-decoration: none;
+        letter-spacing: 0.3rem;
+        margin: 0 4px;
+    }
+    a:hover{
+        transition: all 1000ms ;
+        color: $color-dark;
+        border-bottom: 1px solid $color-dark;
+    }
+
+    .pagination{
+        color: $color-dark;
+    }
 }
