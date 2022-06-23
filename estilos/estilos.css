@@ -70,6 +70,10 @@ header {
 .nav-item {
   font-weight: 500; }
 
+.navbar-toggler-icon {
+  background-color: rgba(255, 255, 255, 0.212);
+  border-radius: 70%; }
+
 @media only screen and (max-width: 400px) {
   .header {
     flex-direction: column;
@@ -431,23 +435,16 @@ footer {
     height: 350px;
     border-radius: 10%; }
 
-.navbar-toggler-icon {
-  background-color: #d0d0d0;
-  border-radius: 20%; }
-
-#dropdownproductos {
-  color: #161616;
-  text-decoration: none;
-  font-size: 1.5rem; }
-
-.dropdown {
-  list-style: none;
-  padding-left: 4px;
-  padding-right: 4px; }
-
 .navproductos {
   display: flex;
-  justify-content: space-between; }
+  align-items: center;
+  justify-content: space-around; }
+  .navproductos a {
+    display: flex;
+    align-items: center; }
+    .navproductos a img {
+      width: 100px;
+      height: 80px; }
 
 .dropdown-item {
   font-size: 1.3rem; }
@@ -461,12 +458,16 @@ footer {
     text-align: center; }
     .flexcontainer__products img {
       width: 300px;
-      height: 350px; } }
+      height: 350px; }
+  .navproductos {
+    flex-wrap: wrap; } }
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .flexcontainer__products img {
     width: 300px;
-    height: 350px; } }
+    height: 350px; }
+  .navproductos {
+    flex-wrap: wrap; } }
 
 .championestitle {
   text-align: center; }
