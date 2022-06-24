@@ -609,3 +609,8 @@ footer {
     border-bottom: 1px solid #212529; }
   .container_pagination .pagination {
     color: #212529; }
+
+@media only screen and (max-width: 650px) {
+  .nav-pages {
+    display: flex;
+    flex-wrap: wrap; } }

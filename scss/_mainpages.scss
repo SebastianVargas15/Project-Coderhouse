@@ -75,3 +75,11 @@
         color: $color-dark;
     }
 }
+
+@media only screen and (max-width:650px) {
+
+    .nav-pages{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
